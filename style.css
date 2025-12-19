@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(./Fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url(./Fonts/BebasNeue-Regular.ttf);
+}
+
+:root {
+  --main-color: #fff9f4;
+  --orange-color: #ff8367;
+  --grey-color: #E5E5E5;
+  --dark-grey: #363958;
+  --button-color: #3D4FF3;
+  --button-hover: #0B5ED7;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 12px 0px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "roboto";
+}
+
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  width: 40%;
+  padding-right: 20%;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.logo-img img {
+  width: 100%;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logo-content span {
+  color: var(--orange-color);
+  font-weight: 700;
+}
+
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.links ul li .grey {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.bar {
+  display: none;
+}
+
+.hero-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 0px 200px 70px;
+}
+
+.shoeimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 2rem;
+}
+
+.shoeimg img {
+  width: 100%;
+}
+
+.shoecontent {
+  display: flex;
+  flex-direction: column;
+  font-family: 'roboto';
+  padding: 32px;
+}
+
+.shoecontent h1 {
+  font-family: 'bebas';
+  font-size: 80px;
+  font-weight: 500;
+  color: var(--dark-grey);
+
+}
+
+.shoecontent p {
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.shoecontent .orange {
+  font-family: 'bebas';
+  color: var(--orange-color);
+}
+
+.hero-sec button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto';
+  width: 33%;
+  padding: 10px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 17px;
+
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+
+.designs {
+  background-color: var(--grey-color);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+  .links {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    padding: 2% 4%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 15%;
+  }
+
+  .logo-img img {
+    width: 100%;
+  }
+
+  .bar {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    ;
+  }
+
+  .hero-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 12px;
+  }
+
+  .shoeimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .shoeimg img {
+    width: 100%;
+  }
+
+  .shoecontent {
+    padding: 16px;
+  }
+
+  .hero-sec button {
+    width: 45%;
+  }
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:990px) {
+
+
+  .links {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    padding: 2% 4%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 15%;
+  }
+
+  .logo-img img {
+    width: 100%;
+  }
+
+  .bar {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    ;
+  }
+
+  .hero-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 0px 20px 70px;
+  }
+
+  .shoeimg {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .shoeimg img {
+    width: 100%;
+  }
+
+  .shoecontent {
+    width: 81%;
+    padding-left: 50px;
+  }
+}
