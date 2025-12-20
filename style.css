@@ -21,8 +21,15 @@
   --text-color: #363958;
   --button-color: #3D4FF3;
   --button-hover: #0B5ED7;
-  --card-color: #F1F1F1;
+  --image-color: #F1F1F1;
 }
+
+body{
+  font-family: 'roboto';
+  background-color: var(--grey-color);
+}
+
+/* Header Section */
 
 header {
   display: flex;
@@ -35,7 +42,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  font-family: "roboto";
+}
+
+p{
+  line-height: 25px;
 }
 
 .logo {
@@ -91,21 +101,23 @@ header {
   display: none;
 }
 
+/* Hero Section */
+
 .hero-sec {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 50px;
   width: 100%;
   background-color: var(--main-color);
-  padding: 0px 200px 70px;
+  padding: 0px 0px 70px;
 }
 
 .shoeimg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 40%;
   padding: 2rem;
 }
 
@@ -116,7 +128,6 @@ header {
 .shoecontent {
   display: flex;
   flex-direction: column;
-  font-family: 'roboto';
   padding: 32px;
 }
 
@@ -125,7 +136,6 @@ header {
   font-size: 80px;
   font-weight: 500;
   color: var(--text-color);
-
 }
 
 .shoecontent p {
@@ -160,87 +170,191 @@ button:hover {
   cursor: pointer;
 }
 
-.c-sec {
+/* Designs Section */
+
+.casual{
   display: flex;
   flex-direction: column;
-  padding: 2% 15%;
-  background-color: var(--grey-color);
+  width: 100%;
+  padding: 30px 200px;
+}
+
+
+.casual h2{
+  font-family: 'bebas';
+  font-weight: 500;
+  font-size: 48px;
+  color: var(--text-color);
+}
+
+.shoes-cards{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   width: 100%;
 }
 
-.c-sec>h2 {
-  color: var(--text-color);
-  font-size: 48px;
-  font-family: 'bebas';
-  font-weight: 500;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-
-}
-
-.card {
-  font-family: 'roboto';
+.card{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 8px;
   background-color: white;
-  padding: 10px;
-  border-radius: 1rem;
-  width: 30%;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  width: 35%;
+  border-radius: 20px;
+  padding: 12px;
+
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.c-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70% !important;
-}
-
-.cardimg {
-  background-color: var(--card-color);
-  border-radius: 1rem;
+.cardimg{
   height: 100% !important;
 }
 
-.formal {
-  background-color: transparent;
+.cardimg img{
+  border-radius: 20px;
+  height: 100% !important;
+  width: 100%;
+  background-color: var(--image-color);
 }
 
-.cardimg img {
-  height: 100%;
-}
-
-.cardshoeimg {
-  width: 100% !important;
-}
-
-.card button {
-  width: 50%;
-}
-
-.cardtitle h3 {
-  font-size: 24px;
-  color: var(--text-color);
-  padding-bottom: 10px;
-}
-
-.price {
+.cardtitle{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20%;
-  color: var(--orange-color);
+  flex-direction: column;
+  gap: 9px;
+  padding: 8px 16px;
+}
+
+.cardtitle>h4{
+  color: var(--text-color);
+}
+
+.cardtitle h4{
   font-size: 24px;
+  font-weight: 600;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  color: var(--orange-color);
+  padding: 15px 0px;
+}
+
+.formalimg img{
+  background-color:transparent;
+}
+
+.features{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  padding: 20px 200px;
+}
+
+.ftsec{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+}
+.boximg{
+  width: 35%;
+  padding: 16px 44px;
+}
+
+.boximg img{
+  width: 100%;
+}
+
+.boxcontent{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 16px;
+}
+
+.boxcontent h5{
+  font-size: 20px;
   font-weight: 700;
+  color: var(--text-color);
+  padding-bottom: 8px;
+}
+
+.ftimg{
+  display: flex;
+  justify-content: flex-end;
+  width: 55%;
+}
+
+.features .ftimg img{
+  width: 100%;
+}
+
+/* Email Section */
+
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 200px;
+}
+
+.emailsec{
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 12px;
+}
+.emailsec h2{
+  padding: 20px 0px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.input-group{
+  display: flex;
+  padding: 10px 30px;
+}
+
+.input-group input{
+  flex-grow: 1;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+}
+
+.input-group button{
+  padding: 3px 6px;
+  background-color: var(--button-color);
+  border: none;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-group button:hover{
+  background-color: green;
 }
 
 
-@media only screen and (max-width:767px) {
+/* Media Quries */
+
+@media only screen and (max-width:480px) {
 
   .links {
     display: none;
@@ -268,7 +382,6 @@ button:hover {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    ;
   }
 
   .hero-sec {
@@ -298,37 +411,78 @@ button:hover {
     width: 45%;
   }
 
-  .row {
+  .casual{
+    padding: 60px 30px;
+  }
+
+  .shoes-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .features{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 15px;
+  }
+  
+  .features .ftimg{
+    display: flex;
+    order: -1;
+    width: 100%;
+  }
+
+  .features .ftimg img{
+    width: 100%;
+  }
+
+  .ftsec{
+    width: 100%;
+
+  }
+  .box{
     display: flex;
     flex-direction: column;
   }
 
-  .c-sec {
-    padding: 15px;
+  .boximg{
+    width: 70%;
+    padding: 0px 44px;
   }
 
-  .card {
+  .boxcontent{
+    width: 100%;
+  }
+
+  .email{
+    padding: 16px;
+  }
+
+  .input-group{
     display: flex;
-    width: auto;
-
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 14px 0px;
+    width: 80%;
   }
 
-  .price {
+  .input-group input{
+    padding: 9px 20px;
+  }
+
+  .input-group button{
     display: flex;
-    gap: 30%;
-  }
-
-  .card button {
-    width: 45%;
-
+    width: 20%;
   }
 
 }
 
-
-@media screen and (min-width:768px) and (max-width:990px) {
-
+@media only screen and (min-width:481px) and (max-width:768px) {
 
   .links {
     display: none;
@@ -360,15 +514,15 @@ button:hover {
 
   .hero-sec {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 0px;
-    padding: 0px 20px 70px;
+    padding: 0px 12px;
   }
 
   .shoeimg {
-    width: 80%;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .shoeimg img {
@@ -376,33 +530,79 @@ button:hover {
   }
 
   .shoecontent {
-    width: 81%;
-    padding-left: 50px;
+    padding: 16px;
   }
 
-  .c-sec {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
+  .hero-sec button {
+    width: 45%;
   }
 
-  .card {
-    display: flex;
+  .casual{
+    padding: 40px 30px;
+  }
+
+  .card{
     width: 100%;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .cardimg {
+  .cardtitle{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card button{
+  width: 83%;
+  }
+
+  .price{
+    display: flex;
+    flex-direction: column;
+    gap: none;
+    width: 100%;
+  }
+
+  .cardimg{
     height: 100% !important;
   }
 
-  .price {
+    .features{
     display: flex;
-    gap: 30%;
+    padding: 20px 30px;
+    gap: 15px;
+  }
+  
+  .features .ftimg{
+    display: flex;
+    order: -1;
+    width: 60%;
+    height: 200px;
   }
 
-  .card button {
-    width: 50%;
+  .features .ftimg img{
+    width: 100%;
+  }
+
+  .ftsec{
+    width: 80%;
+  }
+
+  .box{
+    display: flex;
+    padding: 6px;
+  }
+
+  .boximg{
+    width: 55%;
+    padding: 0px 20px;
+  }
+
+  .boxcontent{
+    width: 100%;
+  }
+
+  .email{
+    padding: 20px 30px;
   }
 
 }
