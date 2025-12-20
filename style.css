@@ -18,9 +18,10 @@
   --main-color: #fff9f4;
   --orange-color: #ff8367;
   --grey-color: #E5E5E5;
-  --dark-grey: #363958;
+  --text-color: #363958;
   --button-color: #3D4FF3;
   --button-hover: #0B5ED7;
+  --card-color: #F1F1F1;
 }
 
 header {
@@ -48,7 +49,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 20%;
 }
 
 .logo-img img {
@@ -123,7 +124,7 @@ header {
   font-family: 'bebas';
   font-size: 80px;
   font-weight: 500;
-  color: var(--dark-grey);
+  color: var(--text-color);
 
 }
 
@@ -137,7 +138,8 @@ header {
   color: var(--orange-color);
 }
 
-.hero-sec button {
+.hero-sec button,
+.card button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,15 +160,84 @@ button:hover {
   cursor: pointer;
 }
 
-
-.designs {
+.c-sec {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 15%;
   background-color: var(--grey-color);
+  width: 100%;
 }
 
+.c-sec>h2 {
+  color: var(--text-color);
+  font-size: 48px;
+  font-family: 'bebas';
+  font-weight: 500;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 
+}
 
+.card {
+  font-family: 'roboto';
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 1rem;
+  width: 30%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
 
+.c-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70% !important;
+}
+
+.cardimg {
+  background-color: var(--card-color);
+  border-radius: 1rem;
+  height: 100% !important;
+}
+
+.formal {
+  background-color: transparent;
+}
+
+.cardimg img {
+  height: 100%;
+}
+
+.cardshoeimg {
+  width: 100% !important;
+}
+
+.card button {
+  width: 50%;
+}
+
+.cardtitle h3 {
+  font-size: 24px;
+  color: var(--text-color);
+  padding-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20%;
+  color: var(--orange-color);
+  font-size: 24px;
+  font-weight: 700;
+}
 
 
 @media only screen and (max-width:767px) {
@@ -227,6 +298,31 @@ button:hover {
     width: 45%;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-sec {
+    padding: 15px;
+  }
+
+  .card {
+    display: flex;
+    width: auto;
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .price {
+    display: flex;
+    gap: 30%;
+  }
+
+  .card button {
+    width: 45%;
+
+  }
 
 }
 
@@ -260,7 +356,6 @@ button:hover {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    ;
   }
 
   .hero-sec {
@@ -284,4 +379,30 @@ button:hover {
     width: 81%;
     padding-left: 50px;
   }
+
+  .c-sec {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .cardimg {
+    height: 100% !important;
+  }
+
+  .price {
+    display: flex;
+    gap: 30%;
+  }
+
+  .card button {
+    width: 50%;
+  }
+
 }
