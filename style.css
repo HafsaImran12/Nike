@@ -696,7 +696,7 @@ footer {
   }
 
   .email {
-    padding: 16px;
+    padding: 16px 30px;
   }
 
   .input-group {
@@ -746,6 +746,10 @@ footer {
   .ftr-links .list {
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+  }
+
+  footer p{
+    font-size: 20px;
   }
 }
