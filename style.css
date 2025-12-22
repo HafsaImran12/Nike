@@ -300,6 +300,7 @@ button:hover {
 
 .features .ftimg img {
   width: 100%;
+  height: 70%;
 }
 
 /* Email Section */
@@ -354,14 +355,16 @@ button:hover {
   background-color: green;
 }
 
-footer{
+/* Footer Section */
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--footer-color);
 }
 
-.ftr-links{
+.ftr-links {
   display: flex;
   justify-content: space-between;
   gap: 100px;
@@ -370,34 +373,34 @@ footer{
   color: var(--text-color);
 }
 
-.ftr-links h5{
+.ftr-links h5 {
   padding: 10px 0px 14px;
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.ftr-links .list{
+.ftr-links .list {
   padding: 24px;
 }
 
-.ftr-links .list ul{
+.ftr-links .list ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
   list-style-type: none;
 }
 
-.ftr-links .list ul li a{
+.ftr-links .list ul li a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.cpr{
+.cpr {
   padding: 20px 0px;
 }
 
-.cpr span{
+.cpr span {
   color: var(--orange-color);
 }
 
@@ -440,6 +443,11 @@ footer{
     flex-direction: column;
     gap: 0px;
     padding: 0px 12px;
+  }
+
+  .hero-sec button,
+  .card button {
+    width: 60%;
   }
 
   .shoeimg {
@@ -520,7 +528,7 @@ footer{
   .input-group {
     display: flex;
     padding: 14px 0px;
-    width: 80%;
+    width: 100%;
   }
 
   .input-group input {
@@ -540,7 +548,7 @@ footer{
     cursor: pointer;
   }
 
-  .ftr-links{
+  .ftr-links {
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -548,7 +556,7 @@ footer{
     gap: 0px;
   }
 
-  .ftr-links .list{
+  .ftr-links .list {
     width: 100%;
     text-align: center;
     padding: 15px;
@@ -590,13 +598,14 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    padding: 0px 12px;
+    padding: 0px 12px 30px;
   }
 
   .shoeimg {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
   }
 
   .shoeimg img {
@@ -622,35 +631,30 @@ footer{
   .cardtitle {
     display: flex;
     flex-direction: column;
-
   }
 
   .card button {
-    width: 83%;
+    width: 20%;
   }
 
-  .price {
+  .shoes-cards {
     display: flex;
     flex-direction: column;
-    gap: none;
     width: 100%;
-  }
-
-  .cardimg {
-    height: 100% !important;
+    gap: 20px;
   }
 
   .features {
     display: flex;
-    padding: 20px 30px;
+    flex-direction: column;
+    padding: 30px;
     gap: 15px;
   }
 
   .features .ftimg {
     display: flex;
     order: -1;
-    width: 60%;
-    height: 200px;
+    width: 100%;
   }
 
   .features .ftimg img {
@@ -658,16 +662,17 @@ footer{
   }
 
   .ftsec {
-    width: 80%;
+    width: 100%;
   }
 
   .box {
     display: flex;
-    padding: 6px;
+    flex-direction: column;
   }
 
+
   .boximg {
-    width: 55%;
+    width: 40%;
     padding: 0px 20px;
   }
 
@@ -675,20 +680,72 @@ footer{
     width: 100%;
   }
 
+  .boxcontent h5 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--text-color);
+    padding-bottom: 8px;
+  }
+
+  .boxcontent p {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
   .email {
-    padding: 20px 30px;
+    padding: 16px;
   }
 
-  .ftr-links{
+  .input-group {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 20px 30px;
+    padding: 14px 0px;
     width: 100%;
   }
 
-  .ftr-links .list{
-    width: 100%;
+  .input-group input {
+    padding: 9px 20px;
   }
 
+  .subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: none;
+    padding: 5px 7px;
+    background: #3b5cff;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .ftr-links {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .ftr-links h5 {
+    padding: 10px 0px 14px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .ftr-links .list ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .ftr-links .list {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
 }
