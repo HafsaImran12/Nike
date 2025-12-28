@@ -155,8 +155,8 @@ p {
   justify-content: center;
   align-items: center;
   font-family: 'roboto';
-  width: 33%;
-  padding: 10px;
+  width: 48%;
+  padding: 5px;
   background-color: var(--button-color);
   color: white;
   border: none;
@@ -254,7 +254,7 @@ button:hover {
 }
 
 .ftsec {
-  width: 35%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -270,8 +270,8 @@ button:hover {
 }
 
 .boximg {
-  width: 35%;
-  padding: 16px 44px;
+  width: 40%;
+  padding: 16px 20px;
 }
 
 .boximg img {
@@ -295,7 +295,7 @@ button:hover {
 .ftimg {
   display: flex;
   justify-content: flex-end;
-  width: 55%;
+  width: 50%;
 }
 
 .features .ftimg img {
@@ -488,7 +488,7 @@ footer {
   .features {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 40px 30px;
     gap: 15px;
   }
 
@@ -522,7 +522,7 @@ footer {
   }
 
   .email {
-    padding: 16px;
+    padding: 40px 30px;
   }
 
   .input-group {
