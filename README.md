@@ -24,8 +24,7 @@ The purpose of this project is to practice layout structuring, styling, and buil
 - Writing clean and readable code
 
 ## 🚀 Live Demo
-🔗 *Add your GitHub Pages link here*  
-(Example: https://username.github.io/nike-website)
+
 
 ## 📂 Project Status
 This project is created for **learning and practice purposes** and is still open for improvements such as:
