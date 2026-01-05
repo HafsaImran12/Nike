@@ -24,7 +24,7 @@ The purpose of this project is to practice layout structuring, styling, and buil
 - Writing clean and readable code
 
 ## 🚀 Live Demo
-
+- https://hafsaimran12.github.io/Nike/
 
 ## 📂 Project Status
 This project is created for **learning and practice purposes** and is still open for improvements such as:
